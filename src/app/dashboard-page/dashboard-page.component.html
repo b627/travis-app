@@ -1,0 +1,5 @@
+<div class="main-container" *ngIf="!detailShown">
+  <app-dashboard-tile *ngFor="let tile of tiles" [tile]="tile" [detailShown]="detailShown" (detailClick)="onDetailClick($event)"></app-dashboard-tile>
+</div>
+
+<app-dashboard-tile-detail *ngIf="detailShown"></app-dashboard-tile-detail>

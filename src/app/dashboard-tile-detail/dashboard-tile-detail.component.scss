@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box
+}
+
+.detail-container {
+  background-color: #FFFFFF;
+  margin: 100px;
+  padding: 10px;
+
+  p {
+    margin: 0;
+  }
+
+  .detail-header {
+    height: 80px;
+
+    .detail-title {
+      margin: 3px 0;
+      p {
+        border: 1px solid #000000;
+        display: inline;
+        padding: 2px 5px;
+      }
+    }
+    .detail-subtitle {
+      p {
+        color: #47525E;
+        font-family: 'Lato-Black', 'sans-serif';
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 12px 0;
+      }
+    }
+  }
+  .detail-content {
+    height: 300px;
+    padding-right: 1px;
+
+    .campaign-list-item:first-child {
+      border-top: 1px solid #C2C2C2;
+    }
+    .campaign-list-item {
+      border-bottom: 1px solid #C2C2C2;
+      font-family: 'Lato-Bold', 'sans-serif';
+
+      .campaign-list-item-date {
+        p {
+          color: #C2C2C2;
+          text-align: left;
+          line-height: 30px;
+        }
+      }
+
+      .campaign-list-item-name {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+}

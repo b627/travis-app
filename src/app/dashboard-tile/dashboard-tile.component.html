@@ -1,0 +1,44 @@
+<div class="tile-container">
+
+  <div class="tile-header">
+    <div class="tile-title">
+      <p> {{ tile.title }} </p>
+    </div>
+    <div class="tile-subtitle">
+      <p> {{ tile.subtitle }} </p>
+    </div>
+  </div>
+
+  <div class="tile-content">
+    <div class="campaign-list-item">
+      <div class="campaign-list-item-date">
+        <p> {{tile.content.date}} </p>
+      </div>
+      <div class="campaign-list-item-name">
+        <mat-icon>assignment_returned</mat-icon>
+        <p> {{ tile.content.name }} </p>
+      </div>
+    </div>
+    <div class="campaign-list-item">
+      <div class="campaign-list-item-date">
+        <p> {{tile.content.date}} </p>
+      </div>
+      <div class="campaign-list-item-name">
+        <mat-icon>assignment_returned</mat-icon>
+        <p> {{ tile.content.name }} </p>
+      </div>
+    </div>
+    <div class="campaign-list-item">
+      <div class="campaign-list-item-date">
+        <p> {{tile.content.date}} </p>
+      </div>
+      <div class="campaign-list-item-name">
+        <mat-icon>assignment_returned</mat-icon>
+        <p> {{ tile.content.name }} </p>
+      </div>
+    </div>
+  </div>
+  <div class="tile-footer">
+    <a (click)="onDetailClick($event)" href="#">{{ tile.linkDetail }}</a>
+  </div>
+</div>
